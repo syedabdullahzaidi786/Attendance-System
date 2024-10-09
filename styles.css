@@ -1,0 +1,132 @@
+/* style.css */
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.upload-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.file-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+    font-size: 14px;
+}
+
+.students-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #eef2f3;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.student-name {
+    font-size: 18px;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.present, .absent {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.present {
+    background-color: #28a745;
+    color: white;
+}
+
+.present:hover {
+    background-color: #218838;
+}
+
+.absent {
+    background-color: #dc3545;
+    color: white;
+}
+
+.absent:hover {
+    background-color: #c82333;
+}
+
+/* Submit button */
+.submit-section {
+    text-align: center;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
